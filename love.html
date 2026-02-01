@@ -71,6 +71,14 @@
       i love you buri 🌹
     </p>
   </div>
+<script>
+  const music = document.getElementById("music");
+
+  if (sessionStorage.getItem("playMusic") === "yes") {
+    music.play();
+    sessionStorage.removeItem("playMusic");
+  }
+</script>
 
 </body>
 </html>
